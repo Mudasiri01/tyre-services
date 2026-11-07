@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>APEX Tyre Care | Premium Tyres & Automotive Services</title>
+<meta name="description" content="Premium tyres, balancing, alignment and roadside assistance.">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet"></head>
+<body>
+<div id="loader"><svg class="tyre" viewBox="0 0 100 100"></svg><p>APEX</p></div>
+
+<nav class="nav" id="nav"><div class="container d-flex align-items-center justify-content-between">
+<a href="#home" class="brand"><svg class="tyre" viewBox="0 0 100 100" width="34"></svg> APEX<span>TYRE CARE</span></a>
+<ul class="menu" id="menu"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#tyres">Tyres</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li></ul>
+<div class="d-flex gap-2 align-items-center"><a href="#book" class="btn-red d-none d-md-inline-block">Book Appointment</a>
+<button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button></div></div></nav>
+
+<header id="home" class="hero"><div class="hero-bg" data-img="0"></div><div class="hero-shade"></div>
+<div class="container position-relative"><div class="row align-items-center min-vh-100 pt-5">
+<div class="col-lg-7"><h1 class="hero-h"><span>DRIVE WITH</span><span>CONFIDENCE.</span><span class="red">EVERY MILE.</span></h1>
+<p class="lead-s">Premium Tyres. Expert Care. Unmatched Performance.</p>
+<div class="d-flex flex-wrap gap-3"><a href="#services" class="btn-red">Explore Our Services</a><a href="#book" class="btn-ghost">Book Now</a></div></div>
+<div class="col-lg-5 text-center position-relative mt-5 mt-lg-0"><svg class="tyre big float" viewBox="0 0 100 100"></svg>
+<div class="badge-f b1"><i class="fa-solid fa-bolt"></i> Same-day fitting</div>
+<div class="badge-f b2"><i class="fa-solid fa-shield-halved"></i> 12-month warranty</div>
+<div class="badge-f b3"><i class="fa-solid fa-truck-fast"></i> 24/7 roadside</div></div></div></div></header>
+
+<section class="stats"><div class="container"><div class="row g-4 text-center" id="stats"></div></div></section>
+
+<section id="about" class="sec"><div class="container"><div class="row align-items-center g-5">
+<div class="col-lg-6"><div class="overlap"><div class="im im1" data-img="1"></div><div class="im im2" data-img="2"></div><div class="exp"><b>15+</b>Years of craft</div></div></div>
+<div class="col-lg-6"><h2 class="h2">Built in the workshop. Proven on the road.</h2>
+<p class="muted">Since 2009 we have fitted, balanced and aligned tyres for daily drivers, performance cars and commercial fleets. Every job is done by certified technicians on calibrated equipment.</p>
+<div class="row g-3 my-3"><div class="col-sm-6"><div class="glass p-3"><h5><i class="fa-solid fa-bullseye red"></i> Mission</h5><p class="muted m-0">Make every journey safer with honest advice and precise work.</p></div></div>
+<div class="col-sm-6"><div class="glass p-3"><h5><i class="fa-solid fa-eye red"></i> Vision</h5><p class="muted m-0">The most trusted tyre care brand in the region.</p></div></div></div>
+<a href="#why" class="btn-red">Learn More</a></div></div></div></section>
+
+<section id="services" class="sec dark2"><div class="container"><h2 class="h2 text-center">Tyre services, done properly</h2><p class="muted text-center mb-5">Ten services, one workshop.</p><div class="row g-4" id="svc"></div></div></section>
+
+<section id="tyres" class="sec"><div class="container"><h2 class="h2 text-center">Premium tyre collection</h2><p class="muted text-center mb-5">Selected from leading manufacturers.</p><div class="row g-4" id="prod"></div></div></section>
+
+<section id="why" class="sec dark2"><div class="container"><h2 class="h2 text-center mb-5">Why drivers choose us</h2><div class="row g-4" id="whyg"></div></div></section>
+
+<section id="finder" class="sec finder"><div class="container"><div class="glass p-4 p-md-5"><h2 class="h2">Find your tyres</h2>
+<form id="ff" class="row g-3 mt-2">
+<div class="col-6 col-md-3"><label>Vehicle type</label><select class="form-select" id="fv"><option>Car</option><option>SUV</option><option>Sports</option><option>Commercial</option></select></div>
+<div class="col-6 col-md-3"><label>Width</label><select class="form-select" id="fw"><option>195</option><option>205</option><option>225</option><option selected>245</option><option>275</option></select></div>
+<div class="col-6 col-md-3"><label>Profile</label><select class="form-select" id="fp"><option>35</option><option>40</option><option selected>45</option><option>55</option><option>65</option></select></div>
+<div class="col-6 col-md-3"><label>Rim</label><select class="form-select" id="fr"><option>16</option><option>17</option><option>18</option><option selected>19</option><option>20</option></select></div>
+<div class="col-12"><button class="btn-red">Search Tyres</button></div></form><div class="row g-3 mt-3" id="fres"></div></div></div></section>
+
+<section id="gallery" class="sec"><div class="container"><h2 class="h2 text-center mb-4">Inside our workshop</h2>
+<div class="filters" id="gf"><button class="on" data-f="all">All</button><button data-f="workshop">Workshop</button><button data-f="install">Installation</button><button data-f="cars">Cars</button></div>
+<div class="row g-3" id="gg"></div></div></section>
+
+<section class="sec dark2"><div class="container"><h2 class="h2 text-center mb-5">How it works</h2><div class="row g-4 steps" id="steps"></div></div></section>
+
+<section class="sec"><div class="container"><h2 class="h2 text-center mb-5">Driver reviews</h2>
+<div class="swiper" id="tsw"><div class="swiper-wrapper" id="tw"></div><div class="swiper-pagination"></div></div></div></section>
+
+<section class="offers"><div class="container text-center"><h2 class="mega">GET READY FOR THE ROAD</h2>
+<div class="row g-3 mt-3" id="off"></div></div></section>
+
+<section class="sec"><div class="container" style="max-width:820px"><h2 class="h2 text-center mb-4">Questions, answered</h2><div class="accordion" id="faq"></div></div></section>
+
+<section id="book" class="sec dark2"><div class="container"><div class="row g-5"><div class="col-lg-5"><h2 class="h2">Book an appointment</h2><p class="muted">Pick a slot and we will confirm within the hour.</p>
+<a class="btn-wa" id="wa" target="_blank" rel="noopener" href="https://wa.me/15550123456"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a></div>
+<div class="col-lg-7"><form id="bf" class="row g-3 glass p-4" novalidate>
+<div class="col-md-6"><input class="form-control" name="name" placeholder="Full name" required minlength="2"><div class="invalid-feedback">Enter your name.</div></div>
+<div class="col-md-6"><input class="form-control" type="email" name="email" placeholder="Email address" required><div class="invalid-feedback">Enter a valid email.</div></div>
+<div class="col-md-6"><input class="form-control" type="tel" name="phone" placeholder="Phone number" required pattern="[0-9+ ()-]{7,}"><div class="invalid-feedback">Enter a valid phone number.</div></div>
+<div class="col-md-6"><input class="form-control" name="brand" placeholder="Vehicle brand" required><div class="invalid-feedback">Enter the brand.</div></div>
+<div class="col-md-6"><input class="form-control" name="model" placeholder="Vehicle model" required><div class="invalid-feedback">Enter the model.</div></div>
+<div class="col-md-6"><select class="form-select" name="service" id="bs" required><option value="">Service required</option></select><div class="invalid-feedback">Choose a service.</div></div>
+<div class="col-md-6"><input class="form-control" type="date" name="date" id="bd" required><div class="invalid-feedback">Pick a date.</div></div>
+<div class="col-md-6"><select class="form-select" name="time" required><option value="">Preferred time</option><option>09:00</option><option>11:00</option><option>13:00</option><option>15:00</option><option>17:00</option></select><div class="invalid-feedback">Pick a time.</div></div>
+<div class="col-12"><textarea class="form-control" rows="3" placeholder="Additional message"></textarea></div>
+<div class="col-12"><button class="btn-red">Confirm Booking</button></div>
+<div class="col-12 ok" id="ok" hidden><i class="fa-solid fa-circle-check"></i> Booking received. We will confirm by phone shortly.</div></form></div></div></div></section>
+
+<section id="contact" class="sec"><div class="container"><div class="row g-4">
+<div class="col-lg-5"><h2 class="h2">Visit the workshop</h2>
+<p class="muted"><i class="fa-solid fa-location-dot red"></i> 21 Industrial Avenue, Motor District</p>
+<p class="muted"><i class="fa-solid fa-phone red"></i> +1 555 012 3456</p>
+<p class="muted"><i class="fa-solid fa-envelope red"></i> hello@apextyrecare.com</p>
+<p class="muted"><i class="fa-solid fa-clock red"></i> Mon–Sat 8:00–19:00, Sun 10:00–16:00</p>
+<div class="soc"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></div></div>
+<div class="col-lg-7"><div class="map"><iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.2,51.45,0.0,51.55"></iframe></div></div></div></div></section>
+
+<footer class="foot"><div class="container"><div class="row g-4">
+<div class="col-lg-4"><a href="#home" class="brand"><svg class="tyre" viewBox="0 0 100 100" width="34"></svg> APEX<span>TYRE CARE</span></a><p class="muted mt-3">Premium tyres and precision automotive care for every journey.</p>
+<form id="nl" class="d-flex gap-2"><input class="form-control" type="email" required placeholder="Your email"><button class="btn-red">Join</button></form><small id="nlm" class="red"></small></div>
+<div class="col-6 col-lg-2"><h6>Quick links</h6><a href="#about">About</a><a href="#services">Services</a><a href="#tyres">Tyres</a><a href="#gallery">Gallery</a></div>
+<div class="col-6 col-lg-2"><h6>Services</h6><a href="#services">Installation</a><a href="#services">Alignment</a><a href="#services">Balancing</a><a href="#services">Roadside</a></div>
+<div class="col-6 col-lg-2"><h6>Products</h6><a href="#tyres">Car</a><a href="#tyres">SUV</a><a href="#tyres">Performance</a><a href="#tyres">Winter</a></div>
+<div class="col-6 col-lg-2"><h6>Contact</h6><a href="#contact">+1 555 012 3456</a><a href="#contact">hello@apextyrecare.com</a></div></div>
+<p class="muted text-center mt-5 mb-0">© 2026 APEX Tyre Care. All rights reserved.</p></div></footer>
+
+<div id="lb"><img alt=""><button aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+<script src="script.js"></script></body></html>
